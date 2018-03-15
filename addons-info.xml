@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="plugin.onedrive" name="OneDrive" provider-name="Carlos Guzman (cguZZman)" version="2.0.1">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="script.module.clouddrive.common" />
+	</requires>
+	<extension library="addon.py" point="xbmc.python.pluginsource">
+		<provides>image audio video</provides>
+	</extension>
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">Microsoft OneDrive for KODI</summary>
+		<description lang="en_GB">
+Play all your media from OneDrive including Videos, Music and Pictures.
+ - Unlimited number of personal or business accounts.
+ - Search over your drive.
+ - Auto-Refreshed slideshow.
+ - Export your videos to your library (.strm files)
+ - Use OneDrive as a source
+ - This program is not affiliated with or sponsored by Microsoft.
+		</description>
+		<summary lang="he_IL">כונן OneDrive של מיקרוסופט עבור קודי</summary>
+		<description lang="he_IL">
+הפעל את כל המדיה שלך מ- OneDrive כולל וידאו, מוסיקה ותמונות.
+  - מספר בלתי מוגבל של חשבונות אישיים או עסקיים.
+  - חיפוש ומציאת הכונן שלך.
+  - ריענון מצגת אוטומטית.
+  - ייצוא קטעי הווידאו לספרייה שלך (קבצי .strm)
+  - שימוש ב-OneDrive כמקור
+  - תוכנית זו אינה מזוהה עם או בחסות מיקרוסופט.
+		</description>		
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<source>https://github.com/cguZZman/plugin.onedrive</source>
+		<forum>https://github.com/cguZZman/plugin.onedrive/issues</forum>
+		<website>https://addons.kodi.tv/show/plugin.onedrive</website>
+		<news>
+v2.0.1 released Nov 30, 2017:
+- Bug fixes
+v2.0.0 released Nov 06, 2017:
+- Remake using script.module.clouddrive.common library
+- Fix OneDrive for Business functionality
+		</news>
+	</extension>
+</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.0.2">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="script.module.clouddrive.common" />
+	</requires>
+	<extension library="addon.py" point="xbmc.python.pluginsource">
+		<provides>image audio video</provides>
+	</extension>
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">Google Drive for KODI</summary>
+		<description lang="en_GB">
+Play all your media from Google Drive including Videos, Music and Pictures.
+ - Unlimited number of accounts.
+ - Search over your drive.
+ - Auto-Refreshed slideshow.
+ - Export your videos to your library (.strm files)
+ - Use Google Drive as a source
+ - This program is not affiliated with or sponsored by Google.
+		</description>
+		<summary lang="he_IL">כונן Google Drive של מיקרוסופט עבור קודי</summary>
+		<description lang="he_IL">
+הפעל את כל המדיה שלך מ- Google Drive כולל וידאו, מוסיקה ותמונות.
+  - מספר בלתי מוגבל של חשבונות.
+  - חיפוש ומציאת הכונן שלך.
+  - ריענון מצגת אוטומטית.
+  - ייצוא קטעי הווידאו לספרייה שלך (קבצי .strm)
+  - שימוש ב-Google Drive כמקור
+  - תוכנית זו אינה קשורה או ממומנת על ידי Google.
+		</description>		
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<source>https://github.com/cguZZman/plugin.googledrive</source>
+		<forum>https://github.com/cguZZman/plugin.googledrive/issues</forum>
+		<website>https://addons.kodi.tv/show/plugin.googledrive</website>
+		<news>
+v1.0.2 released March 15, 2018:
+- Bug fixes
+- Auto export strm
+- Select stream format
+v1.0.1 released Nov 30, 2017:
+- Bug fixes
+v1.0.0 Nov 6, 2017:
+- First release
+		</news>
+	</extension>
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.0.2">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="script.module.dateutil" />
+	</requires>
+	<extension library="/" point="xbmc.python.module" />
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">Cloud Drive Common Module</summary>
+		<description lang="en_GB">Common Services and Classes for all the cloud drive addons.</description>
+		<summary lang="he_IL">מודול משותף לכונן בענן</summary>
+		<description lang="he_IL">שירותים ושירותים משותפים לכל התוספים של כונן הענן.</description>		
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<source>https://github.com/cguZZman/script.module.clouddrive.common</source>
+		<forum>https://github.com/cguZZman/script.module.clouddrive.common/issues</forum>
+		<news>
+v1.0.2 released March 15, 2018:
+- Fixes
+v1.0.1 released Nov 6, 2017:
+- Login app rename
+- Support for images by extension only when the cloud drive doesn't provide image information. 
+v1.0.0 released Nov 6, 2017:
+- First release
+		</news>
+	</extension>
+</addon><addon id="repository.cguzzman" name="[B]cguZZman's[/B] Add-on repository" provider-name="Carlos Guzman (cguZZman)" version="1.0.0">
+	<extension name="Official cguZZman's Add-on Repository" point="xbmc.addon.repository">
+        <info>https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info.xml</info>
+        <checksum>https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/cguZZman/repository.plugins/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Add-ons from https://github.com/cguZZman</summary>
+		<description>Download my releases faster</description>
+		<platform>all</platform>
+	</extension>
+</addon></addons>
