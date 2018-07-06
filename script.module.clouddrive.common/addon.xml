@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.module.clouddrive.common" name="Cloud Drive Common Module"
-	version="1.0.3" provider-name="Carlos Guzman (cguZZman)">
+	version="1.0.4" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.dateutil"/>
@@ -17,6 +17,8 @@
 		<source>https://github.com/cguZZman/script.module.clouddrive.common</source>
 		<forum>https://github.com/cguZZman/script.module.clouddrive.common/issues</forum>
 		<news>
+v1.0.4 released Jul 6, 2018:
+- Fix display more than 100 files in source mode
 v1.0.3 released Jul 5, 2018:
 - Fixes
 v1.0.2 released March 15, 2018:
