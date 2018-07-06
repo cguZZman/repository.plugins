@@ -42,7 +42,7 @@ v2.0.0 released Nov 06, 2017:
 - Fix OneDrive for Business functionality
 		</news>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.0.3">
+</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.0.4">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.clouddrive.common" />
@@ -78,6 +78,8 @@ Play all your media from Google Drive including Videos, Music and Pictures.
 		<forum>https://github.com/cguZZman/plugin.googledrive/issues</forum>
 		<website>https://addons.kodi.tv/show/plugin.googledrive</website>
 		<news>
+v1.0.4 released July 5, 2018:
+- Fix exporting and google photos
 v1.0.3 released April 13, 2018:
 - Fix bug playing files with a single quote in the name.
 v1.0.2 released March 15, 2018:
@@ -90,7 +92,7 @@ v1.0.0 Nov 6, 2017:
 - First release
 		</news>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.0.2">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.0.3">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.dateutil" />
@@ -107,6 +109,8 @@ v1.0.0 Nov 6, 2017:
 		<source>https://github.com/cguZZman/script.module.clouddrive.common</source>
 		<forum>https://github.com/cguZZman/script.module.clouddrive.common/issues</forum>
 		<news>
+v1.0.3 released Jul 5, 2018:
+- Fixes
 v1.0.2 released March 15, 2018:
 - Fixes
 v1.0.1 released Nov 6, 2017:
