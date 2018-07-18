@@ -73,7 +73,7 @@ You can clone the project and host it in your own server.
 		<platform>all</platform>
 		<summary lang="en_GB">Google Drive for KODI</summary>
 		<description lang="en_GB">
-Play all your media from Google Drive including Videos, Music and Pictures.
+Play all your media from Google Drive including Videos, Music and Pictures (including Google Photos).
  - Unlimited number of accounts.
  - Team Drives support
  - Search over your drive.
@@ -135,10 +135,11 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.1.5">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.1.6">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.dateutil" />
+		<import addon="script.module.pyqrcode" />
 	</requires>
 	<extension library="/" point="xbmc.python.module" />
 	<extension library="service.py" point="xbmc.service" start="login" />
@@ -152,6 +153,8 @@ You can clone the project and host it in your own server.
 		<source>https://github.com/cguZZman/script.module.clouddrive.common</source>
 		<forum>https://github.com/cguZZman/script.module.clouddrive.common/issues</forum>
 		<news>
+v1.1.6 released Jul 14, 2018:
+- Added a QR code to simplify adding an account
 v1.1.5 released Jul 14, 2018:
 - Fixes for slow connections
 v1.1.4 released Jul 12, 2018:
