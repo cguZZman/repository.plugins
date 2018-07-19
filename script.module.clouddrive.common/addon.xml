@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.module.clouddrive.common" name="Cloud Drive Common Module"
-	version="1.1.6" provider-name="Carlos Guzman (cguZZman)">
+	version="1.1.7" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.dateutil"/>
@@ -18,7 +18,7 @@
 		<source>https://github.com/cguZZman/script.module.clouddrive.common</source>
 		<forum>https://github.com/cguZZman/script.module.clouddrive.common/issues</forum>
 		<news>
-v1.1.6 released Jul 14, 2018:
+v1.1.7 released Jul 14, 2018:
 - Added a QR code to simplify adding an account
 v1.1.5 released Jul 14, 2018:
 - Fixes for slow connections
