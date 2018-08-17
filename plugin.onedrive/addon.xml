@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.onedrive" name="OneDrive" version="2.1.1" provider-name="Carlos Guzman (cguZZman)">
+<addon id="plugin.onedrive" name="OneDrive" version="2.1.2" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.clouddrive.common"/>
@@ -35,6 +35,8 @@ Play all your media from OneDrive including Videos, Music and Pictures.
 		<forum>https://github.com/cguZZman/plugin.onedrive/issues</forum>
 		<website>https://addons.kodi.tv/show/plugin.onedrive</website>
 		<news>
+v2.1.2 released Jul 15, 2018:
+- Auto export and watch export folder.
 v2.1.1 released Jul 14, 2018:
 - Source mode fix
 v2.1.0 released Jul 11, 2018:
