@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.onedrive" name="OneDrive" provider-name="Carlos Guzman (cguZZman)" version="2.1.3">
+<addons><addon id="plugin.onedrive" name="OneDrive" provider-name="Carlos Guzman (cguZZman)" version="2.1.4">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
-		<import addon="script.module.clouddrive.common" version="1.2.3" />
+		<import addon="script.module.clouddrive.common" version="1.2.6" />
 	</requires>
 	<extension library="addon.py" point="xbmc.python.pluginsource">
 		<provides>image audio video</provides>
@@ -35,6 +35,9 @@ Play all your media from OneDrive including Videos, Music and Pictures.
 		<forum>https://github.com/cguZZman/plugin.onedrive/issues</forum>
 		<website>https://addons.kodi.tv/show/plugin.onedrive</website>
 		<news>
+v2.1.4 released Sep 10, 2018:
+- Subtitles assigned in source mode
+- Fixes
 v2.1.3 released Aug 24, 2018:
 - strm files saved in the cloud are exported as is.
 v2.1.2 released Aug 15, 2018:
@@ -64,10 +67,10 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.2.6">
+</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.2.7">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
-		<import addon="script.module.clouddrive.common" version="1.2.3" />
+		<import addon="script.module.clouddrive.common" version="1.2.6" />
 	</requires>
 	<extension library="addon.py" point="xbmc.python.pluginsource">
 		<provides>image audio video</provides>
@@ -80,6 +83,7 @@ You can clone the project and host it in your own server.
 Play all your media from Google Drive including Videos, Music and Pictures (including Google Photos).
  - Unlimited number of accounts.
  - Team Drives support
+ - Google Photos support
  - Search over your drive.
  - Auto-Refreshed slideshow.
  - Export your videos to your library (.strm files)
@@ -101,6 +105,9 @@ Play all your media from Google Drive including Videos, Music and Pictures (incl
 		<forum>https://github.com/cguZZman/plugin.googledrive/issues</forum>
 		<website>https://addons.kodi.tv/show/plugin.googledrive</website>
 		<news>
+v1.2.7 released Sep 10, 2018:
+- Subtitles assigned in source mode
+- Fixes
 v1.2.6 released Aug 26, 2018:
 - Team drive list fix
 v1.2.4 released Aug 24, 2018:
@@ -146,7 +153,7 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.2.5">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.2.6">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.dateutil" />
@@ -164,6 +171,9 @@ You can clone the project and host it in your own server.
 		<source>https://github.com/cguZZman/script.module.clouddrive.common</source>
 		<forum>https://github.com/cguZZman/script.module.clouddrive.common/issues</forum>
 		<news>
+v1.2.6 released Sep 10, 2018:
+- Subtitles assigned in source mode
+- Fixes
 v1.2.5 released Aug 25, 2018:
 - Fix 'Remove' export option
 - Fix error log
