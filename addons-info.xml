@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.onedrive" name="OneDrive" provider-name="Carlos Guzman (cguZZman)" version="2.1.5">
+<addons><addon id="plugin.onedrive" name="OneDrive" provider-name="Carlos Guzman (cguZZman)" version="2.1.6">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
-		<import addon="script.module.clouddrive.common" version="1.2.6" />
+		<import addon="script.module.clouddrive.common" version="1.2.8" />
 	</requires>
 	<extension library="addon.py" point="xbmc.python.pluginsource">
 		<provides>image audio video</provides>
@@ -35,6 +35,8 @@ Play all your media from OneDrive including Videos, Music and Pictures.
 		<forum>https://github.com/cguZZman/plugin.onedrive/issues</forum>
 		<website>https://addons.kodi.tv/show/plugin.onedrive</website>
 		<news>
+v2.1.6 released Sep 20, 2018:
+- Resume points and watched status for strm files in library
 v2.1.5 released Sep 12, 2018:
 - Sign-in fix
 v2.1.4 released Sep 10, 2018:
@@ -69,10 +71,10 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.2.10">
+</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.2.11">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
-		<import addon="script.module.clouddrive.common" version="1.2.6" />
+		<import addon="script.module.clouddrive.common" version="1.2.8" />
 	</requires>
 	<extension library="addon.py" point="xbmc.python.pluginsource">
 		<provides>image audio video</provides>
@@ -107,6 +109,8 @@ Play all your media from Google Drive including Videos, Music and Pictures (incl
 		<forum>https://github.com/cguZZman/plugin.googledrive/issues</forum>
 		<website>https://addons.kodi.tv/show/plugin.googledrive</website>
 		<news>
+v1.2.11 released Sep 20, 2018:
+- Resume points and watched status for strm files in library
 v1.2.10 released Sep 12, 2018:
 - Google Photos fix
 - Order by date fix
@@ -158,7 +162,7 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.2.7">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.2.8">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.dateutil" />
@@ -176,6 +180,8 @@ You can clone the project and host it in your own server.
 		<source>https://github.com/cguZZman/script.module.clouddrive.common</source>
 		<forum>https://github.com/cguZZman/script.module.clouddrive.common/issues</forum>
 		<news>
+v1.2.8 released Sep 20, 2018:
+- Resume points and watched status for strm files in library
 v1.2.7 released Sep 12, 2018:
 - Order by date fix
 v1.2.6 released Sep 10, 2018:
