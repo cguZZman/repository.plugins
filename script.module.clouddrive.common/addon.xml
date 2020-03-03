@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.2.11" provider-name="Carlos Guzman (cguZZman)">
+<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.2.12" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.dateutil"/>
@@ -13,15 +13,15 @@
 		<description lang="en_GB">Common Services and Classes for all the cloud drive addons.</description>
 		<summary lang="he_IL">מודול משותף לכונן בענן</summary>
 		<description lang="he_IL">שירותים ושירותים משותפים לכל התוספים של כונן הענן.</description>		
-		<license>SPDX-License-Identifier: GPL-3.0-or-later</license>
+		<license>GPL-3.0-or-later</license>
 		<source>https://github.com/cguZZman/script.module.clouddrive.common</source>
 		<forum>https://github.com/cguZZman/script.module.clouddrive.common/issues</forum>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
 		<news>
-v1.2.11 released Feb 26, 2020:
-- Fix playback
+v1.2.12 released Mar 3, 2020:
+- NFO export
 		</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
