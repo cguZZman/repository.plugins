@@ -130,7 +130,7 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.2.12">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.2.13">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.dateutil" />
@@ -151,8 +151,8 @@ You can clone the project and host it in your own server.
 			<icon>icon.png</icon>
 		</assets>
 		<news>
-v1.2.12 released Mar 3, 2020:
-- NFO export
+v1.2.13 released Mar 9, 2020:
+- NFO export fix and 403 error retry
 		</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
