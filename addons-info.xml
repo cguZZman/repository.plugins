@@ -71,10 +71,10 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.3.4">
+</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.3.5">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
-		<import addon="script.module.clouddrive.common" version="1.2.12" />
+		<import addon="script.module.clouddrive.common" version="1.2.14" />
 	</requires>
 	<extension library="addon.py" point="xbmc.python.pluginsource">
 		<provides>image audio video</provides>
@@ -113,8 +113,8 @@ Play all your media from Google Drive including Videos, Music and Pictures (incl
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-v1.3.4 released Mar 3, 2020:
-- NFO export
+v1.3.5 released Mar 13, 2020:
+- Teamdrives pagination fix
 		</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
@@ -130,7 +130,7 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.2.13">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.2.14">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.dateutil" />
@@ -151,8 +151,8 @@ You can clone the project and host it in your own server.
 			<icon>icon.png</icon>
 		</assets>
 		<news>
-v1.2.13 released Mar 9, 2020:
-- NFO export fix and 403 error retry
+v1.2.14 released Mar 13, 2020:
+- Refresh token fix
 		</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
