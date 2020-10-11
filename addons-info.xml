@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.onedrive" name="OneDrive" provider-name="Carlos Guzman (cguZZman)" version="2.2.0">
+<addons><addon id="plugin.onedrive" name="OneDrive" provider-name="Carlos Guzman (cguZZman)" version="2.2.1">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
-		<import addon="script.module.clouddrive.common" version="1.3.0" />
+		<import addon="script.module.clouddrive.common" version="1.3.1" />
 	</requires>
 	<extension library="addon.py" point="xbmc.python.pluginsource">
 		<provides>image audio video</provides>
@@ -35,7 +35,7 @@ Play all your media from OneDrive including Videos, Music and Pictures.
 		<forum>https://github.com/cguZZman/plugin.onedrive/issues</forum>
 		<website>https://addons.kodi.tv/show/plugin.onedrive</website>
 		<news>
-v2.2.0 released Oct 10, 2020:
+v2.2.1 released Oct 11, 2020:
 - New export functionality
 - Multiple fixes
 		</news>
@@ -53,10 +53,10 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.4.1">
+</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.4.2">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
-		<import addon="script.module.clouddrive.common" version="1.3.0" />
+		<import addon="script.module.clouddrive.common" version="1.3.1" />
 	</requires>
 	<extension library="addon.py" point="xbmc.python.pluginsource">
 		<provides>image audio video</provides>
@@ -95,7 +95,7 @@ Play all your media from Google Drive including Videos, Music and Pictures (incl
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-v1.4.0 released Oct 10, 2020:
+v1.4.2 released Oct 11, 2020:
 - New export functionality
 - Multiple fixes
 		</news>
@@ -113,7 +113,7 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.3.0">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.3.1">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.dateutil" />
@@ -134,7 +134,7 @@ You can clone the project and host it in your own server.
 			<icon>icon.png</icon>
 		</assets>
 		<news>
-v1.3.0 released Oct 10, 2020:
+v1.3.1 released Oct 11, 2020:
 - New export functionality
 - Multiple fixes
 		</news>
