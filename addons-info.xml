@@ -115,7 +115,7 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.3.7">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.3.8">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.dateutil" />
@@ -136,7 +136,7 @@ You can clone the project and host it in your own server.
 			<icon>icon.png</icon>
 		</assets>
 		<news>
-v1.3.7 released Oct 23, 2020:
+v1.3.8 released Nov 6, 2020:
 - Export improvements
 		</news>
 		<disclaimer lang="en_GB">
