@@ -1,7 +1,10 @@
 @echo off
 SETLOCAL ENABLEDELAYEDEXPANSION
-\Python27\python create_repository.py ..\plugin.onedrive ..\plugin.googledrive ..\script.module.clouddrive.common repository.cguzzman
-copy repository.cguzzman\*.zip docs\
+\Python27\python create_repository.py -d krypton -i addons-info.xml -c addons-info.xml.md5 ..\plugin.onedrive ..\plugin.googledrive ..\script.module.clouddrive.common repository.cguzzman
+\Python27\python create_repository.py -d matrix -i addons-info-matrix.xml -c addons-info-matrix.xml.md5 ..\..\kodi-19\plugin.onedrive ..\..\kodi-19\plugin.googledrive ..\..\kodi-19\script.module.clouddrive.common repository.cguzzman+matrix
+copy krypton\repository.cguzzman\*.zip docs\
+copy matrix\repository.cguzzman\*.zip docs\
+del docs\*1.0.0*.zip
 
 echo ^<html^> > docs\index.html
 echo ^<head^>^<title^>Index of /^</title^>^</head^> >> docs\index.html

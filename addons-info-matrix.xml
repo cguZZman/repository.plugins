@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.onedrive" name="OneDrive" provider-name="Carlos Guzman (cguZZman)" version="2.2.8">
+<addons><addon id="plugin.onedrive" name="OneDrive" provider-name="Carlos Guzman (cguZZman)" version="2.2.8+matrix.0">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.clouddrive.common" version="1.3.9" />
 	</requires>
 	<extension library="addon.py" point="xbmc.python.pluginsource">
@@ -56,9 +56,9 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.4.10">
+</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.4.10+matrix.0">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.clouddrive.common" version="1.3.9" />
 	</requires>
 	<extension library="addon.py" point="xbmc.python.pluginsource">
@@ -115,9 +115,9 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.3.9">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.3.9+matrix.0">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil" />
 		<import addon="script.module.pyqrcode" />
 	</requires>
@@ -153,11 +153,11 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="repository.cguzzman" name="[B]cguZZman's[/B] Add-on repository" provider-name="Carlos Guzman (cguZZman)" version="2.0.0">
-	<extension name="Official cguZZman's Add-on Repository" point="xbmc.addon.repository">
-        <info>https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info.xml</info>
-        <checksum>https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/cguZZman/repository.plugins/master/krypton/</datadir>
+</addon><addon id="repository.cguzzman" name="[B]cguZZman's[/B] Add-on repository" provider-name="Carlos Guzman (cguZZman)" version="2.0.0+matrix.0">
+	<extension name="Official cguZZman's Add-on Repository (matrix)" point="xbmc.addon.repository">
+        <info>https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info-matrix.xml</info>
+        <checksum>https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info-matrix.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/cguZZman/repository.plugins/master/matrix/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Add-ons from https://github.com/cguZZman</summary>
