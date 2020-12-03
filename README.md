@@ -15,7 +15,12 @@ You can install my repository by:
 	-   Select  **Add-on Browser**  (box icon top left)
 	-   Select  **Install from zip file**
 	-   Select  **cguZZman's repo**
-	-   Select  **repository.cguzzman-1.0.0.zip**
+	-   Download the repository version accordingly with your Kodi version:
+	    - If you are using Kodi 19 (matrix), select  **repository.cguzzman-2.0.0+matrix.0.zip**
+	    - If you are using Kodi 17 or 18, select  **repository.cguzzman-2.0.0.zip**
 	-   Wait for  **Add-on enabled**  notification
 	
-- Or you can directly download the zip from here: **[repository.cguzzman-1.0.0.zip](../../raw/master/docs/repository.cguzzman-1.0.0.zip)** and then install it manually.
+- Or you can directly download the zip from here:
+	- Kodi 19 (matrix): **[repository.cguzzman-2.0.0+matrix.0.zip](../../raw/master/docs/repository.cguzzman-2.0.0+matrix.0.zip)**
+	- Kodi 17 or 18: **[repository.cguzzman-2.0.0.zip](../../raw/master/docs/repository.cguzzman-2.0.0.zip)**
+	- and then install it manually.
