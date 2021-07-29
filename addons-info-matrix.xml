@@ -7,7 +7,7 @@
 	<extension library="entrypoint.py" point="xbmc.python.pluginsource">
 		<provides>image audio video</provides>
 	</extension>
-	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension library="service.py" point="xbmc.service" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en_GB">Microsoft OneDrive for KODI</summary>
@@ -56,15 +56,15 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.4.10+matrix.2">
+</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.4.11">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.clouddrive.common" version="1.3.9+matrix.2" />
+		<import addon="script.module.clouddrive.common" version="1.3.10" />
 	</requires>
 	<extension library="entrypoint.py" point="xbmc.python.pluginsource">
 		<provides>image audio video</provides>
 	</extension>
-	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension library="service.py" point="xbmc.service" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en_GB">Google Drive for KODI</summary>
@@ -98,8 +98,8 @@ Play all your media from Google Drive including Videos, Music and Pictures (incl
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-v1.4.10 released Nov 12, 2020:
-- Export improvements
+v1.4.11 released Jul 29, 2021:
+- Fix stream format selection
 		</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
@@ -115,14 +115,14 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.3.9+matrix.2">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.3.10">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil" />
 		<import addon="script.module.pyqrcode" />
 	</requires>
 	<extension library="/" point="xbmc.python.module" />
-	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension library="service.py" point="xbmc.service" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en_GB">Cloud Drive Common Module</summary>
@@ -136,8 +136,8 @@ You can clone the project and host it in your own server.
 			<icon>icon.png</icon>
 		</assets>
 		<news>
-v1.3.9 released Nov 12, 2020:
-- Export improvements
+v1.3.10 released Jul 29, 2021:
+- Add convert method from binary to string 
 		</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
