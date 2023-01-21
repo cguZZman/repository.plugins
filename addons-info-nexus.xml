@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="plugin.onedrive" name="OneDrive" provider-name="Carlos Guzman (cguZZman)" version="2.3.0">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.clouddrive.common" version="1.4.0" />
+	</requires>
+	<extension library="entrypoint.py" point="xbmc.python.pluginsource">
+		<provides>image audio video</provides>
+	</extension>
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">Microsoft OneDrive for KODI</summary>
+		<description lang="en_GB">
+Play all your media from OneDrive including Videos, Music and Pictures.
+ - Unlimited number of personal or business accounts.
+ - Search over your drive.
+ - Auto-Refreshed slideshow.
+ - Export your videos to your library (.strm files)
+ - Use OneDrive as a source
+ - This program is not affiliated with or sponsored by Microsoft.
+		</description>
+		<summary lang="he_IL">כונן OneDrive של מיקרוסופט עבור קודי</summary>
+		<description lang="he_IL">
+הפעל את כל המדיה שלך מ- OneDrive כולל וידאו, מוסיקה ותמונות.
+  - מספר בלתי מוגבל של חשבונות אישיים או עסקיים.
+  - חיפוש ומציאת הכונן שלך.
+  - ריענון מצגת אוטומטית.
+  - ייצוא קטעי הווידאו לספרייה שלך (קבצי .strm)
+  - שימוש ב-OneDrive כמקור
+  - תוכנית זו אינה מזוהה עם או בחסות מיקרוסופט.
+		</description>		
+		<license>GPL-3.0-or-later</license>
+		<source>https://github.com/cguZZman/plugin.onedrive</source>
+		<forum>https://github.com/cguZZman/plugin.onedrive/issues</forum>
+		<website>https://addons.kodi.tv/show/plugin.onedrive</website>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+v2.3.0 released Jan 21, 2023:
+- Kodi 20 fix
+		</news>
+		<disclaimer lang="en_GB">
+This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
+If you want to know more about OAuth 2.0 you can visit the following pages:
+- https://oauth.net/2/
+- https://developers.google.com/identity/protocols/OAuth2
+- https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth
+
+Kodi and myself take no responsibility or liability.
+
+The authentication server URL is specified in Settings / Advanced / Sign-in Server. The Sign-in Server implements the OAuth 2.0 protocol.
+The complete source code of the Sign-in Server can be download here: https://github.com/cguZZman/drive-login
+You can clone the project and host it in your own server. 
+		</disclaimer>
+	</extension>
+</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.5.0">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.clouddrive.common" version="1.4.0" />
+	</requires>
+	<extension library="entrypoint.py" point="xbmc.python.pluginsource">
+		<provides>image audio video</provides>
+	</extension>
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">Google Drive for KODI</summary>
+		<description lang="en_GB">
+Play all your media from Google Drive including Videos, Music and Pictures (including Google Photos).
+ - Unlimited number of accounts.
+ - Team Drives support
+ - Google Photos support
+ - Search over your drive.
+ - Auto-Refreshed slideshow.
+ - Export your videos to your library (.strm files)
+ - Use Google Drive as a source. **(Not currently working due to changes in the Google Drive API)
+ - This program is not affiliated with or sponsored by Google.
+		</description>
+		<summary lang="he_IL">כונן Google Drive של מיקרוסופט עבור קודי</summary>
+		<description lang="he_IL">
+הפעל את כל המדיה שלך מ- Google Drive כולל וידאו, מוסיקה ותמונות.
+  - מספר בלתי מוגבל של חשבונות.
+  - חיפוש ומציאת הכונן שלך.
+  - ריענון מצגת אוטומטית.
+  - ייצוא קטעי הווידאו לספרייה שלך (קבצי .strm)
+  - תוכנית זו אינה קשורה או ממומנת על ידי Google.
+		</description>
+		<license>GPL-3.0-or-later</license>
+		<source>https://github.com/cguZZman/plugin.googledrive</source>
+		<forum>https://github.com/cguZZman/plugin.googledrive/issues</forum>
+		<website>https://addons.kodi.tv/show/plugin.googledrive</website>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+v1.5.0 released Jan 21, 2023:
+- Kodi 20 fix
+		</news>
+		<disclaimer lang="en_GB">
+This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
+If you want to know more about OAuth 2.0 you can visit the following pages:
+- https://oauth.net/2/
+- https://developers.google.com/identity/protocols/OAuth2
+- https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth
+
+Kodi and myself take no responsibility or liability.
+
+The authentication server URL is specified in Settings / Advanced / Sign-in Server. The Sign-in Server implements the OAuth 2.0 protocol.
+The complete source code of the Sign-in Server can be download here: https://github.com/cguZZman/drive-login
+You can clone the project and host it in your own server. 
+		</disclaimer>
+	</extension>
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.4.0">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.dateutil" />
+		<import addon="script.module.pyqrcode" />
+	</requires>
+	<extension library="/" point="xbmc.python.module" />
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">Cloud Drive Common Module</summary>
+		<description lang="en_GB">Common Services and Classes for all the cloud drive addons.</description>
+		<summary lang="he_IL">מודול משותף לכונן בענן</summary>
+		<description lang="he_IL">שירותים ושירותים משותפים לכל התוספים של כונן הענן.</description>		
+		<license>GPL-3.0-or-later</license>
+		<source>https://github.com/cguZZman/script.module.clouddrive.common</source>
+		<forum>https://github.com/cguZZman/script.module.clouddrive.common/issues</forum>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+		<news>
+v1.4.0 released Jan 20, 2023:
+- Kodi 20 fix
+		</news>
+		<disclaimer lang="en_GB">
+This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
+If you want to know more about OAuth 2.0 you can visit the following pages:
+- https://oauth.net/2/
+- https://developers.google.com/identity/protocols/OAuth2
+- https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth
+
+Kodi and myself take no responsibility or liability whatsoever.
+
+The authentication server URL is specified in Settings / Advanced / Sign-in Server. The Sign-in Server implements the OAuth 2.0 protocol.
+The complete source code of the Sign-in Server can be download here: https://github.com/cguZZman/drive-login
+You can clone the project and host it in your own server. 
+		</disclaimer>
+	</extension>
+</addon><addon id="repository.cguzzman" name="[B]cguZZman's[/B] Add-on repository" provider-name="Carlos Guzman (cguZZman)" version="3.0.0">
+	<extension name="Official cguZZman's Add-on Repository (nexus)" point="xbmc.addon.repository">
+		<dir minversion="19.0.0">
+			<info compressed="false">https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info-nexus.xml</info>
+			<checksum>https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info-nexus.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/cguZZman/repository.plugins/master/nexus/</datadir>
+			<hashes>false</hashes>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Add-ons from https://github.com/cguZZman</summary>
+		<description>Download my releases faster</description>
+		<platform>all</platform>
+	</extension>
+</addon></addons>
