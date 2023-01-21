@@ -21,6 +21,6 @@ You can install my repository by:
 	-   Wait for  **Add-on enabled**  notification
 	
 - Or you can directly download the zip from here:
-	- Kodi 19 (matrix): **[repository.cguzzman-2.0.0+matrix.0.zip](../../raw/master/docs/repository.cguzzman-2.0.0+matrix.0.zip)**
+	- Kodi 19 and later: **[repository.cguzzman-2.0.0+matrix.0.zip](../../raw/master/docs/repository.cguzzman-2.0.0+matrix.0.zip)**
 	- Kodi 17 or 18: **[repository.cguzzman-2.0.0.zip](../../raw/master/docs/repository.cguzzman-2.0.0.zip)**
 	- and then install it manually.
