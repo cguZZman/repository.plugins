@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.onedrive" name="OneDrive" provider-name="Carlos Guzman (cguZZman)" version="2.3.0">
+<addons><addon id="plugin.onedrive" name="OneDrive" version="2.4.0" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.clouddrive.common" version="1.4.0" />
+		<import addon="script.module.clouddrive.common" version="1.5.0" />
 	</requires>
-	<extension library="entrypoint.py" point="xbmc.python.pluginsource">
+	<extension point="xbmc.python.pluginsource" library="entrypoint.py">
 		<provides>image audio video</provides>
 	</extension>
-	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.service" library="service.py" start="login" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en_GB">Microsoft OneDrive for KODI</summary>
@@ -39,6 +39,9 @@ Play all your media from OneDrive including Videos, Music and Pictures.
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+v2.4.0 released Oct 4, 2026:
+- Security: tokens and pre-authenticated download links are no longer written to the Kodi log; error reporting removed
+
 v2.3.0 released Jan 21, 2023:
 - Kodi 20 fix
 		</news>
@@ -56,23 +59,22 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" provider-name="Carlos Guzman (cguZZman)" version="1.5.0">
+</addon><addon id="plugin.googledrive" name="Google Drive" version="1.6.0" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.clouddrive.common" version="1.4.0" />
+		<import addon="script.module.clouddrive.common" version="1.5.0" />
 	</requires>
-	<extension library="entrypoint.py" point="xbmc.python.pluginsource">
+	<extension point="xbmc.python.pluginsource" library="entrypoint.py">
 		<provides>image audio video</provides>
 	</extension>
-	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.service" library="service.py" start="login" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en_GB">Google Drive for KODI</summary>
 		<description lang="en_GB">
-Play all your media from Google Drive including Videos, Music and Pictures (including Google Photos).
+Play all your media from Google Drive including Videos, Music and Pictures.
  - Unlimited number of accounts.
  - Team Drives support
- - Google Photos support
  - Search over your drive.
  - Auto-Refreshed slideshow.
  - Export your videos to your library (.strm files)
@@ -97,6 +99,12 @@ Play all your media from Google Drive including Videos, Music and Pictures (incl
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+v1.6.0 released Oct 4, 2026:
+- Google Photos browsing removed: Google no longer allows apps to read your Photos library
+- Sign-in only asks for read-only access to your Drive files
+- Security: tokens are no longer written to the Kodi log; error reporting removed
+- Videos at original quality, music and pictures play through the add-on's local service, so long videos keep playing after the access token expires
+
 v1.5.0 released Jan 21, 2023:
 - Kodi 20 fix
 		</news>
@@ -114,14 +122,14 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" provider-name="Carlos Guzman (cguZZman)" version="1.4.0">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.0" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil" />
 		<import addon="script.module.pyqrcode" />
 	</requires>
-	<extension library="/" point="xbmc.python.module" />
-	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.python.module" library="/" />
+	<extension point="xbmc.service" library="service.py" start="login" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en_GB">Cloud Drive Common Module</summary>
@@ -135,6 +143,13 @@ You can clone the project and host it in your own server.
 			<icon>icon.png</icon>
 		</assets>
 		<news>
+v1.5.0 released Oct 4, 2026:
+- Security: access and refresh tokens are removed from the Kodi log and from error details
+- Error reports are no longer sent to the sign-in server (they could contain tokens), only written to the Kodi log
+- The old plain-text accounts.cfg.migrated file is deleted
+- Files are streamed through the local service, so play URLs no longer carry tokens or pre-authenticated download links (seeking supported, tokens refreshed during long videos)
+- Archives (zip, rar, 7z, cbz, cbr) are no longer listed as music or pictures, so Kodi doesn't download them to look inside
+
 v1.4.0 released Jan 20, 2023:
 - Kodi 20 fix
 		</news>
@@ -152,8 +167,8 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="repository.cguzzman" name="[B]cguZZman's[/B] Add-on repository" provider-name="Carlos Guzman (cguZZman)" version="2.0.0+matrix.0">
-	<extension name="Official cguZZman's Add-on Repository (matrix)" point="xbmc.addon.repository">
+</addon><addon id="repository.cguzzman" name="[B]cguZZman's[/B] Add-on repository" version="2.0.0+matrix.0" provider-name="Carlos Guzman (cguZZman)">
+	<extension point="xbmc.addon.repository" name="Official cguZZman's Add-on Repository (matrix)">
         <info>https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info-matrix.xml</info>
         <checksum>https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info-matrix.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/cguZZman/repository.plugins/master/matrix/</datadir>
