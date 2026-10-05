@@ -6,7 +6,7 @@
 		<import addon="script.module.pyqrcode"/>
 	</requires>
 	<extension point="xbmc.python.module" library="/" />
-	<extension point="xbmc.service" library="service.py" start="login" />
+	<extension point="xbmc.service" library="service.py" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en_GB">Cloud Drive Common Module</summary>
