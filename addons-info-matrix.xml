@@ -233,9 +233,6 @@ v1.5.0 released Oct 4, 2026:
 - The old plain-text accounts.cfg.migrated file is deleted
 - Files are streamed through the local service, so play URLs no longer carry tokens or pre-authenticated download links (seeking supported, tokens refreshed during long videos)
 - Archives (zip, rar, 7z, cbz, cbr) are no longer listed as music or pictures, so Kodi doesn't download them to look inside
-
-v1.4.0 released Jan 20, 2023:
-- Kodi 20 fix
 		</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
