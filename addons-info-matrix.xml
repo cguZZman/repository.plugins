@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.onedrive" name="OneDrive" version="2.4.1" provider-name="Carlos Guzman (cguZZman)">
+<addons><addon id="plugin.onedrive" name="OneDrive" version="2.4.2" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.clouddrive.common" version="1.5.1" />
+		<import addon="script.module.clouddrive.common" version="1.5.2" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="entrypoint.py">
 		<provides>image audio video</provides>
@@ -39,6 +39,10 @@ Play all your media from OneDrive including Videos, Music and Pictures.
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+v2.4.2 released Oct 11, 2026:
+- New sign-in server address: https://drive.signinserver.com (the old one keeps working for older versions)
+- Sign-in works when Kodi or the phone uses IPv6 (requires clouddrive.common 1.5.2)
+
 v2.4.1 released Oct 5, 2026:
 - Requires clouddrive.common 1.5.1 (review fixes: safer redirects, account migration, removed accounts)
 - Unused strings removed
@@ -130,7 +134,7 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.1" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.2" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil" />
@@ -151,6 +155,11 @@ You can clone the project and host it in your own server.
 			<icon>icon.png</icon>
 		</assets>
 		<news>
+v1.5.2 released Oct 11, 2026:
+- Sign-in works when Kodi or the phone uses IPv6: Kodi tells the sign-in server about both its IPv4 and IPv6 networks
+- The source id handles IPv6 addresses and shows one id per IP version
+- Add-ons whose sign-in server moved switch from the old default address to the new one
+
 v1.5.1 released Oct 5, 2026:
 - Account migration keeps accounts.cfg if any account could not be saved
 - The download service no longer sends the authorization header to other hosts on redirect
