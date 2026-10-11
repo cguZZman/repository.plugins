@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.2" provider-name="Carlos Guzman (cguZZman)">
+<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.3" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil"/>
@@ -20,6 +20,9 @@
 			<icon>icon.png</icon>
 		</assets>
 		<news>
+v1.5.3 released Oct 11, 2026:
+- The local streaming and source services no longer write every request to the Kodi log as an error
+
 v1.5.2 released Oct 11, 2026:
 - Sign-in works when Kodi or the phone uses IPv6: Kodi tells the sign-in server about both its IPv4 and IPv6 networks
 - The source id handles IPv6 addresses and shows one id per IP version
