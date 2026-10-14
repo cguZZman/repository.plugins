@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.4" provider-name="Carlos Guzman (cguZZman)">
+<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.5" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil"/>
@@ -19,7 +19,10 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>v1.5.4 released Oct 12, 2026:
+		<news>v1.5.5 released Oct 14, 2026:
+- Requests to the sign-in server report the add-on, Kodi and Python versions, for its anonymous usage statistics
+
+v1.5.4 released Oct 12, 2026:
 - Accounts and caches are stored as JSON, and a locked database is retried instead of failing
 - Plugin URLs can only run the add-on's own actions
 - Kodi 17 (Krypton) code removed; sign-in flow and error messages reorganized
