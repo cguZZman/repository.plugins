@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.onedrive" name="OneDrive" version="2.4.4" provider-name="Carlos Guzman (cguZZman)">
+<addons><addon id="plugin.onedrive" name="OneDrive" version="2.4.5" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.clouddrive.common" version="1.5.4" />
@@ -30,6 +30,16 @@ Play all your media from OneDrive including Videos, Music and Pictures.
   - שימוש ב-OneDrive כמקור
   - תוכנית זו אינה מזוהה עם או בחסות מיקרוסופט.
 		</description>		
+		<summary lang="sv_SE">Microsoft OneDrive för KODI</summary>
+		<description lang="sv_SE">
+Spela upp alla dina medier från OneDrive, inklusive videor, musik och bilder.
+ - Obegränsat antal personliga konton eller företagskonton.
+ - Sök i din OneDrive.
+ - Automatiskt uppdaterat bildspel.
+ - Exportera dina videor till biblioteket (.strm-filer)
+ - Använd OneDrive som källa
+ - Detta program är inte anslutet till eller sponsrat av Microsoft.
+		</description>
 		<license>GPL-3.0-or-later</license>
 		<source>https://github.com/cguZZman/plugin.onedrive</source>
 		<forum>https://github.com/cguZZman/plugin.onedrive/issues</forum>
@@ -37,7 +47,10 @@ Play all your media from OneDrive including Videos, Music and Pictures.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v2.4.4 released Oct 15, 2026:
+		<news>v2.4.5 released Oct 15, 2026:
+- Swedish translation (thanks to Daniel Nylander)
+
+v2.4.4 released Oct 15, 2026:
 - New icon and fanart
 
 v2.4.3 released Oct 12, 2026:
@@ -72,7 +85,7 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" version="1.6.4" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="plugin.googledrive" name="Google Drive" version="1.6.5" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.clouddrive.common" version="1.5.4" />
@@ -103,6 +116,17 @@ Play all your media from Google Drive including Videos, Music and Pictures.
   - ייצוא קטעי הווידאו לספרייה שלך (קבצי .strm)
   - תוכנית זו אינה קשורה או ממומנת על ידי Google.
 		</description>
+		<summary lang="sv_SE">Google Drive för KODI</summary>
+		<description lang="sv_SE">
+Spela upp alla dina medier från Google Drive, inklusive videor, musik och bilder.
+ - Obegränsat antal konton.
+ - Stöd för Team Drives
+ - Sök i din Drive.
+ - Automatiskt uppdaterat bildspel.
+ - Exportera dina videor till biblioteket (.strm-filer)
+ - Använd Google Drive som källa. **(Fungerar inte för närvarande på grund av ändringar i Google Drive API)
+ - Detta program är inte anslutet till eller sponsrat av Google.
+		</description>
 		<license>GPL-3.0-or-later</license>
 		<source>https://github.com/cguZZman/plugin.googledrive</source>
 		<forum>https://github.com/cguZZman/plugin.googledrive/issues</forum>
@@ -110,7 +134,11 @@ Play all your media from Google Drive including Videos, Music and Pictures.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v1.6.4 released Oct 15, 2026:
+		<news>v1.6.5 released Oct 15, 2026:
+- Much faster exports to the library: a folder tree is listed in a few requests instead of one per folder (thanks to 0o120)
+- Swedish translation (thanks to Daniel Nylander)
+
+v1.6.4 released Oct 15, 2026:
 - New icon and fanart
 
 v1.6.3 released Oct 12, 2026:
@@ -150,7 +178,7 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.dropbox" name="Dropbox" version="1.0.2" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="plugin.dropbox" name="Dropbox" version="1.0.3" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.clouddrive.common" version="1.5.4" />
@@ -191,6 +219,16 @@ Inicia sesión desde tu teléfono o computadora con un código corto que muestra
 - Somente leitura: o add-on nunca altera nem exclui seus arquivos
 Entre na conta pelo celular ou computador com um código curto mostrado no Kodi.</description>
 		<disclaimer lang="pt_BR">Este add-on não é afiliado ao Dropbox nem endossado por ele.</disclaimer>
+		<summary lang="sv_SE">Spela upp dina videor, din musik och dina bilder från Dropbox</summary>
+		<description lang="sv_SE">Bläddra i din Dropbox i Kodi och spela upp dina videor, din musik och dina bilder.
+- Valfritt antal Dropbox-konton
+- Sök i din Dropbox
+- Undertexter som sparats bredvid dina videor läses in automatiskt
+- Exportera videor och musik till Kodi-biblioteket (.strm-filer)
+- Använd Dropbox som källa
+- Endast läsning: tillägget ändrar eller tar aldrig bort dina filer
+Logga in från din telefon eller dator med en kort kod som visas i Kodi.</description>
+		<disclaimer lang="sv_SE">Det här tillägget är inte anslutet till eller godkänt av Dropbox.</disclaimer>
 		<license>GPL-3.0-or-later</license>
 		<source>https://github.com/cguZZman/plugin.dropbox</source>
 		<forum>https://github.com/cguZZman/plugin.dropbox/issues</forum>
@@ -198,7 +236,10 @@ Entre na conta pelo celular ou computador com um código curto mostrado no Kodi.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v1.0.2 released Oct 15, 2026:
+		<news>v1.0.3 released Oct 15, 2026:
+- Swedish translation (thanks to Daniel Nylander)
+
+v1.0.2 released Oct 15, 2026:
 - New icon and fanart
 
 v1.0.1 released Oct 12, 2026:

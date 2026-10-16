@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.onedrive" name="OneDrive" version="2.4.4" provider-name="Carlos Guzman (cguZZman)">
+<addon id="plugin.onedrive" name="OneDrive" version="2.4.5" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.clouddrive.common" version="1.5.4"/>
@@ -30,6 +30,16 @@ Play all your media from OneDrive including Videos, Music and Pictures.
   - שימוש ב-OneDrive כמקור
   - תוכנית זו אינה מזוהה עם או בחסות מיקרוסופט.
 		</description>		
+		<summary lang="sv_SE">Microsoft OneDrive för KODI</summary>
+		<description lang="sv_SE">
+Spela upp alla dina medier från OneDrive, inklusive videor, musik och bilder.
+ - Obegränsat antal personliga konton eller företagskonton.
+ - Sök i din OneDrive.
+ - Automatiskt uppdaterat bildspel.
+ - Exportera dina videor till biblioteket (.strm-filer)
+ - Använd OneDrive som källa
+ - Detta program är inte anslutet till eller sponsrat av Microsoft.
+		</description>
 		<license>GPL-3.0-or-later</license>
 		<source>https://github.com/cguZZman/plugin.onedrive</source>
 		<forum>https://github.com/cguZZman/plugin.onedrive/issues</forum>
@@ -37,7 +47,10 @@ Play all your media from OneDrive including Videos, Music and Pictures.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v2.4.4 released Oct 15, 2026:
+		<news>v2.4.5 released Oct 15, 2026:
+- Swedish translation (thanks to Daniel Nylander)
+
+v2.4.4 released Oct 15, 2026:
 - New icon and fanart
 
 v2.4.3 released Oct 12, 2026:

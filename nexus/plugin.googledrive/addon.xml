@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.googledrive" name="Google Drive" version="1.6.4" provider-name="Carlos Guzman (cguZZman)">
+<addon id="plugin.googledrive" name="Google Drive" version="1.6.5" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.clouddrive.common" version="1.5.4"/>
@@ -30,6 +30,17 @@ Play all your media from Google Drive including Videos, Music and Pictures.
   - ייצוא קטעי הווידאו לספרייה שלך (קבצי .strm)
   - תוכנית זו אינה קשורה או ממומנת על ידי Google.
 		</description>
+		<summary lang="sv_SE">Google Drive för KODI</summary>
+		<description lang="sv_SE">
+Spela upp alla dina medier från Google Drive, inklusive videor, musik och bilder.
+ - Obegränsat antal konton.
+ - Stöd för Team Drives
+ - Sök i din Drive.
+ - Automatiskt uppdaterat bildspel.
+ - Exportera dina videor till biblioteket (.strm-filer)
+ - Använd Google Drive som källa. **(Fungerar inte för närvarande på grund av ändringar i Google Drive API)
+ - Detta program är inte anslutet till eller sponsrat av Google.
+		</description>
 		<license>GPL-3.0-or-later</license>
 		<source>https://github.com/cguZZman/plugin.googledrive</source>
 		<forum>https://github.com/cguZZman/plugin.googledrive/issues</forum>
@@ -37,7 +48,11 @@ Play all your media from Google Drive including Videos, Music and Pictures.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v1.6.4 released Oct 15, 2026:
+		<news>v1.6.5 released Oct 15, 2026:
+- Much faster exports to the library: a folder tree is listed in a few requests instead of one per folder (thanks to 0o120)
+- Swedish translation (thanks to Daniel Nylander)
+
+v1.6.4 released Oct 15, 2026:
 - New icon and fanart
 
 v1.6.3 released Oct 12, 2026:
