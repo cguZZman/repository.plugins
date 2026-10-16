@@ -85,10 +85,10 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" version="1.6.5" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="plugin.googledrive" name="Google Drive" version="1.6.6" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.clouddrive.common" version="1.5.4" />
+		<import addon="script.module.clouddrive.common" version="1.5.6" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="entrypoint.py">
 		<provides>image audio video</provides>
@@ -134,7 +134,10 @@ Spela upp alla dina medier från Google Drive, inklusive videor, musik och bilde
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v1.6.5 released Oct 15, 2026:
+		<news>v1.6.6 released Oct 16, 2026:
+- Faster exports now come from clouddrive.common 1.5.6 (required)
+
+v1.6.5 released Oct 15, 2026:
 - Much faster exports to the library: a folder tree is listed in a few requests instead of one per folder (thanks to 0o120)
 - Swedish translation (thanks to Daniel Nylander)
 
@@ -154,16 +157,7 @@ v1.6.2 released Oct 11, 2026:
 
 v1.6.1 released Oct 5, 2026:
 - Requires clouddrive.common 1.5.1 (review fixes: safer redirects, account migration, removed accounts)
-- Unused strings removed
-
-v1.6.0 released Oct 4, 2026:
-- Google Photos browsing removed: Google no longer allows apps to read your Photos library
-- Sign-in only asks for read-only access to your Drive files
-- Security: tokens are no longer written to the Kodi log; error reporting removed
-- Videos at original quality, music and pictures play through the add-on's local service, so long videos keep playing after the access token expires
-
-v1.5.0 released Jan 21, 2023:
-- Kodi 20 fix</news>
+- Unused strings removed</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
 If you want to know more about OAuth 2.0 you can visit the following pages:
@@ -178,10 +172,10 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.dropbox" name="Dropbox" version="1.0.3" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="plugin.dropbox" name="Dropbox" version="1.0.4" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.clouddrive.common" version="1.5.4" />
+		<import addon="script.module.clouddrive.common" version="1.5.6" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="entrypoint.py">
 		<provides>image audio video</provides>
@@ -236,7 +230,11 @@ Logga in från din telefon eller dator med en kort kod som visas i Kodi.</descri
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v1.0.3 released Oct 15, 2026:
+		<news>v1.0.4 released Oct 16, 2026:
+- Much faster exports to the library: a folder tree is listed in one request
+- Requires clouddrive.common 1.5.6
+
+v1.0.3 released Oct 15, 2026:
 - Swedish translation (thanks to Daniel Nylander)
 
 v1.0.2 released Oct 15, 2026:
@@ -249,7 +247,7 @@ v1.0.1 released Oct 12, 2026:
 v1.0.0 released Oct 11, 2026:
 - First release</news>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.5" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.6" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil" />
@@ -269,7 +267,12 @@ v1.0.0 released Oct 11, 2026:
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>v1.5.5 released Oct 14, 2026:
+		<news>v1.5.6 released Oct 16, 2026:
+- Faster library exports for add-ons that can list a whole folder tree at once (Google Drive, Dropbox)
+- Using an add-on as a source no longer fails on pages requested twice
+- Database retries stop when Kodi shuts down
+
+v1.5.5 released Oct 14, 2026:
 - Requests to the sign-in server report the add-on, Kodi and Python versions, for its anonymous usage statistics
 
 v1.5.4 released Oct 12, 2026:
@@ -284,16 +287,7 @@ v1.5.3 released Oct 11, 2026:
 v1.5.2 released Oct 11, 2026:
 - Sign-in works when Kodi or the phone uses IPv6: Kodi tells the sign-in server about both its IPv4 and IPv6 networks
 - The source id handles IPv6 addresses and shows one id per IP version
-- Add-ons whose sign-in server moved switch from the old default address to the new one
-
-v1.5.1 released Oct 5, 2026:
-- Account migration keeps accounts.cfg if any account could not be saved
-- The download service no longer sends the authorization header to other hosts on redirect
-- Download links stop working as soon as their account is removed
-- URL fragments are also redacted in the log
-- Library exports skip archives too
-- Error responses from the download service are complete again
-- Unused strings removed</news>
+- Add-ons whose sign-in server moved switch from the old default address to the new one</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
 If you want to know more about OAuth 2.0 you can visit the following pages:

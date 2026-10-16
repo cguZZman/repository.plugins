@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.5" provider-name="Carlos Guzman (cguZZman)">
+<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.6" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil"/>
@@ -19,7 +19,12 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>v1.5.5 released Oct 14, 2026:
+		<news>v1.5.6 released Oct 16, 2026:
+- Faster library exports for add-ons that can list a whole folder tree at once (Google Drive, Dropbox)
+- Using an add-on as a source no longer fails on pages requested twice
+- Database retries stop when Kodi shuts down
+
+v1.5.5 released Oct 14, 2026:
 - Requests to the sign-in server report the add-on, Kodi and Python versions, for its anonymous usage statistics
 
 v1.5.4 released Oct 12, 2026:
@@ -34,16 +39,7 @@ v1.5.3 released Oct 11, 2026:
 v1.5.2 released Oct 11, 2026:
 - Sign-in works when Kodi or the phone uses IPv6: Kodi tells the sign-in server about both its IPv4 and IPv6 networks
 - The source id handles IPv6 addresses and shows one id per IP version
-- Add-ons whose sign-in server moved switch from the old default address to the new one
-
-v1.5.1 released Oct 5, 2026:
-- Account migration keeps accounts.cfg if any account could not be saved
-- The download service no longer sends the authorization header to other hosts on redirect
-- Download links stop working as soon as their account is removed
-- URL fragments are also redacted in the log
-- Library exports skip archives too
-- Error responses from the download service are complete again
-- Unused strings removed</news>
+- Add-ons whose sign-in server moved switch from the old default address to the new one</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
 If you want to know more about OAuth 2.0 you can visit the following pages:
