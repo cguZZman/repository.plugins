@@ -21,7 +21,15 @@ You can install my repository by:
 	-   Wait for  **Add-on enabled**  notification
 	
 - Or you can directly download the zip from here:
-	- Kodi 20 (nexus): **[repository.cguzzman-3.0.0.zip](../../raw/master/docs/repository.cguzzman-3.0.0.zip)**
+	- Kodi 20 or later (nexus, omega): **[repository.cguzzman-3.0.0.zip](../../raw/master/docs/repository.cguzzman-3.0.0.zip)**
 	- Kodi 19 (matrix): **[repository.cguzzman-2.0.0+matrix.0.zip](../../raw/master/docs/repository.cguzzman-2.0.0+matrix.0.zip)**
 	- Kodi 17 or 18: **[repository.cguzzman-2.0.0.zip](../../raw/master/docs/repository.cguzzman-2.0.0.zip)**
 	- and then install it manually.
+
+## Getting updates
+
+New versions reach this repository first, and the official Kodi repository after Team Kodi's review. Kodi 19 and later only updates add-ons that are also in the official repository from there. To get this repository's versions as soon as they're out, set **Settings → System → Add-ons → Update official add-ons from → Any repositories**.
+
+## Support this project
+
+The add-ons and the sign-in service are free and open source, and run by one developer. Hosting costs money, and Google requires a paid security assessment every year to keep Google Drive sign-in working. If you find them useful, you can support the project on **[Ko-fi](https://ko-fi.com/cguzzman)**.
