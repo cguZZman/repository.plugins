@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.onedrive" name="OneDrive" version="2.4.3" provider-name="Carlos Guzman (cguZZman)">
+<addons><addon id="plugin.onedrive" name="OneDrive" version="2.4.4" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.clouddrive.common" version="1.5.4" />
@@ -37,7 +37,10 @@ Play all your media from OneDrive including Videos, Music and Pictures.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v2.4.3 released Oct 12, 2026:
+		<news>v2.4.4 released Oct 15, 2026:
+- New icon and fanart
+
+v2.4.3 released Oct 12, 2026:
 - A search no longer affects the folder listings that follow it
 - Kodi 17 (Krypton) settings removed
 - Requires clouddrive.common 1.5.4
@@ -69,7 +72,7 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" version="1.6.3" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="plugin.googledrive" name="Google Drive" version="1.6.4" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.clouddrive.common" version="1.5.4" />
@@ -107,7 +110,10 @@ Play all your media from Google Drive including Videos, Music and Pictures.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v1.6.3 released Oct 12, 2026:
+		<news>v1.6.4 released Oct 15, 2026:
+- New icon and fanart
+
+v1.6.3 released Oct 12, 2026:
 - Stream format selection removed: it relied on an undocumented Google service that no longer works
 - "Check for Google ban" is now "Check download quota"
 - Search works with quotes in the text, and subtitles are taken only from the video's folder
@@ -144,7 +150,7 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.dropbox" name="Dropbox" version="1.0.1" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="plugin.dropbox" name="Dropbox" version="1.0.2" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.clouddrive.common" version="1.5.4" />
@@ -192,7 +198,10 @@ Entre na conta pelo celular ou computador com um código curto mostrado no Kodi.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v1.0.1 released Oct 12, 2026:
+		<news>v1.0.2 released Oct 15, 2026:
+- New icon and fanart
+
+v1.0.1 released Oct 12, 2026:
 - Only subtitles named after the video are loaded
 - Requires clouddrive.common 1.5.4 (storage and stability fixes)
 
