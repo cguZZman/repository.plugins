@@ -259,7 +259,7 @@ v1.0.1 released Oct 12, 2026:
 v1.0.0 released Oct 11, 2026:
 - First release</news>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.8" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.9" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil" />
@@ -279,7 +279,10 @@ v1.0.0 released Oct 11, 2026:
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>v1.5.8 released Oct 17, 2026:
+		<news>v1.5.9 released Oct 17, 2026:
+- Videos and music start and seek faster: connections to Google Drive, OneDrive and Dropbox are kept open between requests
+
+v1.5.8 released Oct 17, 2026:
 - Subtitle and picture names no longer show %20-style codes in Kodi
 
 v1.5.7 released Oct 16, 2026:

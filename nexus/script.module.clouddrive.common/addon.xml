@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.8" provider-name="Carlos Guzman (cguZZman)">
+<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.9" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil"/>
@@ -19,7 +19,10 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>v1.5.8 released Oct 17, 2026:
+		<news>v1.5.9 released Oct 17, 2026:
+- Videos and music start and seek faster: connections to Google Drive, OneDrive and Dropbox are kept open between requests
+
+v1.5.8 released Oct 17, 2026:
 - Subtitle and picture names no longer show %20-style codes in Kodi
 
 v1.5.7 released Oct 16, 2026:
