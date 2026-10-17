@@ -259,7 +259,7 @@ v1.0.1 released Oct 12, 2026:
 v1.0.0 released Oct 11, 2026:
 - First release</news>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.7" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.8" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil" />
@@ -279,7 +279,10 @@ v1.0.0 released Oct 11, 2026:
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>v1.5.7 released Oct 16, 2026:
+		<news>v1.5.8 released Oct 17, 2026:
+- Subtitle and picture names no longer show %20-style codes in Kodi
+
+v1.5.7 released Oct 16, 2026:
 - Use as a source: files open through the add-on's local download service, so Google Drive and Dropbox files play (they need a token a redirect can't carry), and OneDrive's links stay out of the Kodi log
 - Use as a source: folder names with spaces or other special characters work
 
@@ -298,12 +301,7 @@ v1.5.4 released Oct 12, 2026:
 - Music files without tags no longer log a warning
 
 v1.5.3 released Oct 11, 2026:
-- The local streaming and source services no longer write every request to the Kodi log as an error
-
-v1.5.2 released Oct 11, 2026:
-- Sign-in works when Kodi or the phone uses IPv6: Kodi tells the sign-in server about both its IPv4 and IPv6 networks
-- The source id handles IPv6 addresses and shows one id per IP version
-- Add-ons whose sign-in server moved switch from the old default address to the new one</news>
+- The local streaming and source services no longer write every request to the Kodi log as an error</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
 If you want to know more about OAuth 2.0 you can visit the following pages:
