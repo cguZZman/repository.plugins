@@ -89,10 +89,10 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" version="1.6.7" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="plugin.googledrive" name="Google Drive" version="1.6.8" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.clouddrive.common" version="1.5.7" />
+		<import addon="script.module.clouddrive.common" version="1.5.10" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="entrypoint.py">
 		<provides>image audio video</provides>
@@ -138,7 +138,11 @@ Spela upp alla dina medier från Google Drive, inklusive videor, musik och bilde
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v1.6.7 released Oct 16, 2026:
+		<news>v1.6.8 released Oct 24, 2026:
+- Removing an account can also revoke the add-on's access to your Google account
+- Requires clouddrive.common 1.5.10
+
+v1.6.7 released Oct 16, 2026:
 - Use Google Drive as a source in Kodi's file manager works again
 - Requires clouddrive.common 1.5.7
 
@@ -180,10 +184,10 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.dropbox" name="Dropbox" version="1.0.5" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="plugin.dropbox" name="Dropbox" version="1.0.6" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.clouddrive.common" version="1.5.7" />
+		<import addon="script.module.clouddrive.common" version="1.5.10" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="entrypoint.py">
 		<provides>image audio video</provides>
@@ -238,7 +242,11 @@ Logga in från din telefon eller dator med en kort kod som visas i Kodi.</descri
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v1.0.5 released Oct 16, 2026:
+		<news>v1.0.6 released Oct 24, 2026:
+- Removing an account can also revoke the add-on's access to your Dropbox account
+- Requires clouddrive.common 1.5.10
+
+v1.0.5 released Oct 16, 2026:
 - Use Dropbox as a source in Kodi's file manager works: files play, and the source server moved to port 8588 so it can run next to Google Drive's
 - Requires clouddrive.common 1.5.7
 
@@ -259,7 +267,7 @@ v1.0.1 released Oct 12, 2026:
 v1.0.0 released Oct 11, 2026:
 - First release</news>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.9" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.10" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil" />
@@ -279,7 +287,10 @@ v1.0.0 released Oct 11, 2026:
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>v1.5.9 released Oct 17, 2026:
+		<news>v1.5.10 released Oct 24, 2026:
+- Removing an account can also revoke the add-on's access at the provider (Google Drive, Dropbox); this signs out your other Kodi devices using that account too
+
+v1.5.9 released Oct 17, 2026:
 - Videos and music start and seek faster: connections to Google Drive, OneDrive and Dropbox are kept open between requests
 
 v1.5.8 released Oct 17, 2026:
@@ -301,10 +312,7 @@ v1.5.4 released Oct 12, 2026:
 - Accounts and caches are stored as JSON, and a locked database is retried instead of failing
 - Plugin URLs can only run the add-on's own actions
 - Kodi 17 (Krypton) code removed; sign-in flow and error messages reorganized
-- Music files without tags no longer log a warning
-
-v1.5.3 released Oct 11, 2026:
-- The local streaming and source services no longer write every request to the Kodi log as an error</news>
+- Music files without tags no longer log a warning</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
 If you want to know more about OAuth 2.0 you can visit the following pages:
