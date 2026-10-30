@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.onedrive" name="OneDrive" version="2.4.7" provider-name="Carlos Guzman (cguZZman)">
+<addon id="plugin.onedrive" name="OneDrive" version="2.4.8" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.clouddrive.common" version="1.5.7"/>
@@ -47,7 +47,11 @@ Spela upp alla dina medier från OneDrive, inklusive videor, musik och bilder.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v2.4.7 released Oct 30, 2026:
+		<news>v2.4.8 released Oct 30, 2026:
+- Folders shared with you and added to your files show their name, and open in Use as a source
+- Auto-refreshed slideshow: notices replaced pictures, not only a different number of them
+
+v2.4.7 released Oct 30, 2026:
 - Adding an account shows only its OneDrive: personal accounts moved to Microsoft's new storage listed several system drives (Bundles, ODCMetadataArchive...)
 
 v2.4.6 released Oct 16, 2026:

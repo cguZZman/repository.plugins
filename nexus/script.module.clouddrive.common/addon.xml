@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.11" provider-name="Carlos Guzman (cguZZman)">
+<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.12" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil"/>
@@ -19,7 +19,10 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>v1.5.11 released Oct 24, 2026:
+		<news>v1.5.12 released Oct 30, 2026:
+- Music folders can also be sorted by track number and by file name
+
+v1.5.11 released Oct 24, 2026:
 - The remove dialog only warns that other Kodi devices are signed out where revoking does that (Google Drive, not Dropbox)
 
 v1.5.10 released Oct 24, 2026:
