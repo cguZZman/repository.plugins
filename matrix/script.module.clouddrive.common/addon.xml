@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.17" provider-name="Carlos Guzman (cguZZman)">
+<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.18" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil"/>
@@ -19,7 +19,10 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>v1.5.17 released Oct 31, 2026:
+		<news>v1.5.18 released Oct 31, 2026:
+- Browsing shows the plot, cast and artwork of the .nfo files and pictures next to each video (requested in plugin.googledrive#301)
+
+v1.5.17 released Oct 31, 2026:
 - When an account's sign-in is no longer valid, the add-ons ask again to sign in, instead of showing an empty folder
 
 v1.5.16 released Oct 31, 2026:
@@ -43,10 +46,7 @@ v1.5.11 released Oct 24, 2026:
 - The remove dialog only warns that other Kodi devices are signed out where revoking does that (Google Drive, not Dropbox)
 
 v1.5.10 released Oct 24, 2026:
-- Removing an account can also revoke the add-on's access at the provider (Google Drive, Dropbox); this signs out your other Kodi devices using that account too
-
-v1.5.9 released Oct 17, 2026:
-- Videos and music start and seek faster: connections to Google Drive, OneDrive and Dropbox are kept open between requests</news>
+- Removing an account can also revoke the add-on's access at the provider (Google Drive, Dropbox); this signs out your other Kodi devices using that account too</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
 If you want to know more about OAuth 2.0 you can visit the following pages:
