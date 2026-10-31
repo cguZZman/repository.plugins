@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.15" provider-name="Carlos Guzman (cguZZman)">
+<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.16" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil"/>
@@ -19,7 +19,10 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>v1.5.15 released Oct 30, 2026:
+		<news>v1.5.16 released Oct 31, 2026:
+- Every drive opens the same menu (Files, its own folders, Exports and Search), also in Dropbox
+
+v1.5.15 released Oct 30, 2026:
 - Exports of removed accounts can be removed: Exports of removed accounts, in the add-on's main screen
 - Dropbox shows a drive's exports after its files
 
