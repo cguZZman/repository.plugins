@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.onedrive" name="OneDrive" version="2.4.9" provider-name="Carlos Guzman (cguZZman)">
+<addon id="plugin.onedrive" name="OneDrive" version="2.4.10" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.clouddrive.common" version="1.5.7"/>
+		<import addon="script.module.clouddrive.common" version="1.5.13"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="entrypoint.py">
 		<provides>image audio video</provides>
@@ -47,7 +47,13 @@ Spela upp alla dina medier från OneDrive, inklusive videor, musik och bilder.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v2.4.9 released Oct 30, 2026:
+		<news>v2.4.10 released Oct 30, 2026:
+- Big folders open a page at a time: Items per page in the Advanced settings (500 by default, 0 for the whole folder)
+- Going back to a folder, after viewing a picture for example, doesn't load it again for a few minutes (Cache expiration time)
+- .vtt subtitles are loaded too
+- Requires clouddrive.common 1.5.13
+
+v2.4.9 released Oct 30, 2026:
 - Subtitles next to a video are found in its folder, also with OneDrive for Business accounts where search missed them
 
 v2.4.8 released Oct 30, 2026:
@@ -70,16 +76,7 @@ v2.4.4 released Oct 15, 2026:
 v2.4.3 released Oct 12, 2026:
 - A search no longer affects the folder listings that follow it
 - Kodi 17 (Krypton) settings removed
-- Requires clouddrive.common 1.5.4
-
-v2.4.2 released Oct 11, 2026:
-- New sign-in server address: https://drive.signinserver.com (the old one keeps working for older versions)
-- Sign-in works when Kodi or the phone uses IPv6 (requires clouddrive.common 1.5.2)
-
-v2.4.1 released Oct 5, 2026:
-- Requires clouddrive.common 1.5.1 (review fixes: safer redirects, account migration, removed accounts)
-- Unused strings removed
-</news>
+- Requires clouddrive.common 1.5.4</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
 If you want to know more about OAuth 2.0 you can visit the following pages:
