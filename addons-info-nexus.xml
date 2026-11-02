@@ -90,10 +90,10 @@ The complete source code of the Sign-in Server can be download here: https://git
 You can clone the project and host it in your own server. 
 		</disclaimer>
 	</extension>
-</addon><addon id="plugin.googledrive" name="Google Drive" version="1.6.12" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="plugin.googledrive" name="Google Drive" version="1.6.13" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.clouddrive.common" version="1.5.18" />
+		<import addon="script.module.clouddrive.common" version="1.5.20" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="entrypoint.py">
 		<provides>image audio video</provides>
@@ -139,7 +139,11 @@ Spela upp alla dina medier från Google Drive, inklusive videor, musik och bilde
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v1.6.12 released Oct 31, 2026:
+		<news>v1.6.13 released Nov 2, 2026:
+- Sign in with your own Google app (a Google Cloud project of your own), for example while Google blocks new sign-ins to the add-on's app: see "Signing in with your own Google app" in the README
+- Requires clouddrive.common 1.5.20
+
+v1.6.12 released Oct 31, 2026:
 - Videos show the plot, cast and artwork of the Kodi .nfo files and pictures next to them (it can be turned off in the settings) (#301)
 - Requires clouddrive.common 1.5.18
 
@@ -164,11 +168,7 @@ v1.6.7 released Oct 16, 2026:
 - Requires clouddrive.common 1.5.7
 
 v1.6.6 released Oct 16, 2026:
-- Faster exports now come from clouddrive.common 1.5.6 (required)
-
-v1.6.5 released Oct 15, 2026:
-- Much faster exports to the library: a folder tree is listed in a few requests instead of one per folder (thanks to 0o120)
-- Swedish translation (thanks to Daniel Nylander)</news>
+- Faster exports now come from clouddrive.common 1.5.6 (required)</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
 If you want to know more about OAuth 2.0 you can visit the following pages:
@@ -271,7 +271,7 @@ v1.0.6 released Oct 24, 2026:
 - Removing an account can also revoke the add-on's access to your Dropbox account
 - Requires clouddrive.common 1.5.10</news>
 	</extension>
-</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.19" provider-name="Carlos Guzman (cguZZman)">
+</addon><addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.20" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil" />
@@ -291,7 +291,10 @@ v1.0.6 released Oct 24, 2026:
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>v1.5.19 released Nov 2, 2026:
+		<news>v1.5.20 released Nov 2, 2026:
+- Accounts can sign in with the user's own OAuth app (Google Drive: your own Google Cloud project), and Kodi renews their sign-in with the provider directly
+
+v1.5.19 released Nov 2, 2026:
 - Reading the .nfo files while browsing gives up after a few seconds, so a slow connection doesn't keep a folder from opening
 
 v1.5.18 released Oct 31, 2026:
@@ -315,10 +318,7 @@ v1.5.13 released Oct 30, 2026:
 - Auto-refreshed slideshow: shows every picture of the folder, and notices replaced pictures
 
 v1.5.12 released Oct 30, 2026:
-- Music folders can also be sorted by track number and by file name
-
-v1.5.11 released Oct 24, 2026:
-- The remove dialog only warns that other Kodi devices are signed out where revoking does that (Google Drive, not Dropbox)</news>
+- Music folders can also be sorted by track number and by file name</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
 If you want to know more about OAuth 2.0 you can visit the following pages:

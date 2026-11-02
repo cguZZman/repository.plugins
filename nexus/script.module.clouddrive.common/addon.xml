@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.19" provider-name="Carlos Guzman (cguZZman)">
+<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.5.20" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.dateutil"/>
@@ -19,7 +19,10 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>v1.5.19 released Nov 2, 2026:
+		<news>v1.5.20 released Nov 2, 2026:
+- Accounts can sign in with the user's own OAuth app (Google Drive: your own Google Cloud project), and Kodi renews their sign-in with the provider directly
+
+v1.5.19 released Nov 2, 2026:
 - Reading the .nfo files while browsing gives up after a few seconds, so a slow connection doesn't keep a folder from opening
 
 v1.5.18 released Oct 31, 2026:
@@ -43,10 +46,7 @@ v1.5.13 released Oct 30, 2026:
 - Auto-refreshed slideshow: shows every picture of the folder, and notices replaced pictures
 
 v1.5.12 released Oct 30, 2026:
-- Music folders can also be sorted by track number and by file name
-
-v1.5.11 released Oct 24, 2026:
-- The remove dialog only warns that other Kodi devices are signed out where revoking does that (Google Drive, not Dropbox)</news>
+- Music folders can also be sorted by track number and by file name</news>
 		<disclaimer lang="en_GB">
 This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
 If you want to know more about OAuth 2.0 you can visit the following pages:
